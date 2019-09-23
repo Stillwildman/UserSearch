@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">GitHubUserSearching</string>
+    <string name="app_name">GitHubUserSearch</string>
 
     <string name="hint_query">Enter a user name</string>
 

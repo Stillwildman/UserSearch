@@ -6,7 +6,7 @@
 
         <variable
             name="userViewModel"
-            type="com.vincent.githubusersearching.viewmodel.UserViewModel" />
+            type="com.vincent.githubusersearch.viewmodel.UserViewModel" />
 
         <variable
             name="isLoading"

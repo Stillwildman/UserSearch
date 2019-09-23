@@ -4,7 +4,7 @@
     <data>
         <variable
             name="userViewModel"
-            type="com.vincent.githubusersearching.viewmodel.UserViewModel" />
+            type="com.vincent.githubusersearch.viewmodel.UserViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -45,9 +45,10 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:scrollbars="vertical"
-            app:layout_constraintTop_toBottomOf="@+id/edit_query" />
+            app:layout_constraintTop_toBottomOf="@+id/edit_query"
+            app:layout_constraintBottom_toBottomOf="parent"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
