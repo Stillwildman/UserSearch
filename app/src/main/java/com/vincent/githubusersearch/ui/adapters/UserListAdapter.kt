@@ -49,6 +49,6 @@ class UserListAdapter(diffCallback: DiffUtil.ItemCallback<User>) : BaseBindingRe
     }
 
     override fun onBindingViewHolder(holder: RecyclerView.ViewHolder, bindingView: InflateUserRowBinding, position: Int, payload: Any?) {
-
+        // 如果有帶payload更新特定位置的話
     }
 }
