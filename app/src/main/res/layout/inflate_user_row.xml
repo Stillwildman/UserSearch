@@ -26,7 +26,7 @@
             tools:text="1"
             android:textSize="@dimen/font_text_size_l"
             android:textColor="@color/md_grey_400"
-            android:text="@{String.valueOf(item.number)}"
+            android:text="@{String.valueOf(item.indexNumber)}"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
