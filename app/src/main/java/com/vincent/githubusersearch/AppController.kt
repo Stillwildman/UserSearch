@@ -11,6 +11,11 @@ import androidx.multidex.MultiDexApplication
 
 class AppController : MultiDexApplication() {
 
+    companion object {
+        @get:Synchronized
+        lateinit var instance: AppController
+    }
+
     override fun attachBaseContext(base: Context) {
         super.attachBaseContext(base)
         MultiDex.install(this)
@@ -33,14 +38,6 @@ class AppController : MultiDexApplication() {
 
     fun hideKeyboardByGivenView(view: View) {
         val imm = applicationContext.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
-
         imm.hideSoftInputFromWindow(view.applicationWindowToken, InputMethodManager.HIDE_NOT_ALWAYS)
-    }
-
-    companion object {
-
-        @get:Synchronized
-        lateinit var instance: AppController
-            private set
     }
 }
